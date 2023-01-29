@@ -3,28 +3,29 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import "./navbar.css";
 import logo from "../../assets/logo.svg";
 
-const Menu = () => (
-  <>
-    <p>
-      <a href="#home">Home</a>
-    </p>
-    <p>
-      <a href="#wgpt3">What is GPT3?</a>
-    </p>
-    <p>
-      <a href="#possibility">Open AI</a>
-    </p>
-    <p>
-      <a href="#features">Case Studies</a>
-    </p>
-    <p>
-      <a href="#blog">Library</a>
-    </p>
-  </>
-);
+// const Menu = () => (
+//   <>
+//     <p>
+//       <a href="#home">Home</a>
+//     </p>
+//     <p>
+//       <a href="#wgpt3">What is GPT3?</a>
+//     </p>
+//     <p>
+//       <a href="#possibility">Open AI</a>
+//     </p>
+//     <p>
+//       <a href="#features">Case Studies</a>
+//     </p>
+//     <p>
+//       <a href="#blog">Library</a>
+//     </p>
+//   </>
+// );
 
 const Navbar = () => {
   const [toogleMenu, setToogleMenu] = useState(false);
+  // eslint-disable-next-line
   const Menu = () => (
     <>
       <p onClick={() => setToogleMenu(false)}>
@@ -44,7 +45,7 @@ const Navbar = () => {
       </p>
     </>
   );
-
+  console.log(Menu);
   return (
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
